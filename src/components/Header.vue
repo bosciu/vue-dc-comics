@@ -42,12 +42,12 @@ export default {
 			display: flex;
 			justify-content: flex-end;
 			li {
-				margin-left: 3%;
+				margin-left: 2%;
 				font-size: 14px;
 				font-weight: 600;
 				text-transform: uppercase;
 				cursor: pointer;
-				color: #464646;
+				color: $genericTextColor;
 				&.active {
 					position: relative;
 					color: $brandColor;
