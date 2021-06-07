@@ -5,16 +5,13 @@
 		</div>
 		<nav>
 			<ul>
-				<li><a href="#">Characters</a></li>
-				<li class="active"><a href="#">Comics</a></li>
-				<li><a href="#">Movies</a></li>
-				<li><a href="#">Tv</a></li>
-				<li><a href="#">Games</a></li>
-				<li><a href="#">Collectibles</a></li>
-				<li><a href="#">Videos</a></li>
-				<li><a href="#">Fans</a></li>
-				<li><a href="#">News</a></li>
-				<li><a href="#">Shop</a></li>
+				<li
+					v-for="(link, index) in links"
+					:key="index"
+					:class="{ active: link.selected }"
+				>
+					<a :href="link.link">{{ link.text }}</a>
+				</li>
 			</ul>
 		</nav>
 	</header>
@@ -22,7 +19,63 @@
 
 <script>
 export default {
-	name: "Header"
+	name: "Header",
+	data: function () {
+		return {
+			links: [
+				{
+					text: "Characters",
+					link: "#characters",
+					selected: false
+				},
+				{
+					text: "Comics",
+					link: "#comics",
+					selected: true
+				},
+				{
+					text: "Movies",
+					link: "#movies",
+					selected: false
+				},
+				{
+					text: "Tv",
+					link: "#tv",
+					selected: false
+				},
+				{
+					text: "Games",
+					link: "#games",
+					selected: false
+				},
+				{
+					text: "Collectibles",
+					link: "#collectibles",
+					selected: false
+				},
+				{
+					text: "Videos",
+					link: "#videos",
+					selected: false
+				},
+				{
+					text: "Fans",
+					link: "#fans",
+					selected: false
+				},
+				{
+					text: "News",
+					link: "#news",
+					selected: false
+				},
+				{
+					text: "Shop",
+					link: "#shop",
+					selected: false
+				}
+			]
+		};
+	}
 };
 </script>
 
@@ -35,6 +88,7 @@ export default {
 	overflow: hidden;
 	img {
 		padding: 10% 0;
+		cursor: pointer;
 	}
 	nav {
 		flex-grow: 1;
@@ -60,6 +114,7 @@ export default {
 					height: 20px;
 					display: block;
 					background: $brandColor;
+					cursor: default;
 				}
 			}
 		}

@@ -137,7 +137,7 @@ footer {
 		img {
 			position: absolute;
 			right: 0;
-			bottom: 0;
+			bottom: -30px;
 			transform: scale(1.2);
 		}
 	}
@@ -164,7 +164,8 @@ footer {
 						font-size: 20px;
 					}
 					li {
-						margin: 0 3%;
+						margin: 0 2%;
+						cursor: pointer;
 					}
 				}
 			}
