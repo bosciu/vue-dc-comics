@@ -53,31 +53,31 @@
 						<li>
 							<img
 								src="../assets/img/footer-facebook.png"
-								alt=""
+								alt="Facebook"
 							/>
 						</li>
 						<li>
 							<img
 								src="../assets/img/footer-twitter.png"
-								alt=""
+								alt="Twitter"
 							/>
 						</li>
 						<li>
 							<img
 								src="../assets/img/footer-youtube.png"
-								alt=""
+								alt="Youtube"
 							/>
 						</li>
 						<li>
 							<img
 								src="../assets/img/footer-pinterest.png"
-								alt=""
+								alt="Pinterest"
 							/>
 						</li>
 						<li>
 							<img
 								src="../assets/img/footer-periscope.png"
-								alt=""
+								alt="Periscope"
 							/>
 						</li>
 					</ul>

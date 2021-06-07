@@ -1,7 +1,7 @@
 <template>
 	<header class="container">
 		<div id="logo-container">
-			<img src="../assets/img/dc-logo.png" alt="" />
+			<img src="../assets/img/dc-logo.png" alt="DC Comics Logo" />
 		</div>
 		<nav>
 			<ul>

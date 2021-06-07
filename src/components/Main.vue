@@ -8,33 +8,36 @@
 				<div class="store-link">
 					<img
 						src="../assets/img/buy-comics-digital-comics.png"
-						alt=""
+						alt="Digital comics"
 					/>
 					<span>Digital comics</span>
 				</div>
 				<div class="store-link">
 					<img
 						src="../assets/img/buy-comics-merchandise.png"
-						alt=""
+						alt="DC Merchandise"
 					/>
 					<span>DC Merchandise</span>
 				</div>
 				<div class="store-link">
 					<img
 						src="../assets/img/buy-comics-subscriptions.png"
-						alt=""
+						alt="Subscription"
 					/>
 					<span>Subscription</span>
 				</div>
 				<div class="store-link">
 					<img
 						src="../assets/img/buy-comics-shop-locator.png"
-						alt=""
+						alt="Comic shop locator"
 					/>
 					<span>Comic shop locator</span>
 				</div>
 				<div class="store-link">
-					<img src="../assets/img/buy-dc-power-visa.svg" alt="" />
+					<img
+						src="../assets/img/buy-dc-power-visa.svg"
+						alt="DC power visa"
+					/>
 					<span>DC power visa</span>
 				</div>
 			</div>
