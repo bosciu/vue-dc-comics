@@ -1,8 +1,8 @@
 <template>
 	<main>
-		<div class="container">
-			<h1>-->Content goes here &lt; --</h1>
-		</div>
+		<Jumbotron />
+		<Comics />
+		<div class="container"></div>
 		<div class="stores">
 			<div class="container">
 				<div class="store-link">
@@ -46,8 +46,14 @@
 </template>
 
 <script>
+import Jumbotron from "./Jumbotron.vue";
+import Comics from "./Comics.vue";
 export default {
-	name: "Main"
+	name: "Main",
+	components: {
+		Jumbotron,
+		Comics
+	}
 };
 </script>
 
