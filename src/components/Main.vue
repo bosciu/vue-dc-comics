@@ -53,6 +53,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../style/variables";
+@import "../style/mixins";
 main {
 	background: black;
 	color: white;
@@ -67,8 +68,7 @@ main {
 			justify-content: space-around;
 			height: 100%;
 			.store-link {
-				display: flex;
-				align-items: center;
+				@include flex-center("vertical");
 				width: 20%;
 				&:last-child > img {
 					height: 25%;

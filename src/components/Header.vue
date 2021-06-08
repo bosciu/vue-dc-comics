@@ -81,10 +81,10 @@ export default {
 
 <style lang="scss" scoped>
 @import "../style/variables";
+@import "../style/mixins";
 .container {
-	display: flex;
+	@include flex-center("vertical");
 	justify-content: space-between;
-	align-items: center;
 	overflow: hidden;
 	img {
 		padding: 10% 0;

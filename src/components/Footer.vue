@@ -95,6 +95,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../style/variables";
+@import "../style/mixins";
 footer {
 	background: url("../assets/img/footer-bg.jpg") no-repeat;
 	background-size: cover;
@@ -104,9 +105,7 @@ footer {
 		width: 35%;
 		padding-top: 3%;
 		&::after {
-			content: "";
-			display: table;
-			clear: both;
+			@include clearfix;
 		}
 		ul {
 			float: left;
@@ -119,13 +118,13 @@ footer {
 				color: #959595;
 				margin: 10% 0;
 				font-size: 12px;
-			}
-			li:first-child {
-				margin-bottom: 15%;
-				text-transform: uppercase;
-				color: white;
-				font-size: 20px;
-				font-weight: 600;
+				&:first-child {
+					margin-bottom: 15%;
+					text-transform: uppercase;
+					color: white;
+					font-size: 20px;
+					font-weight: 600;
+				}
 			}
 		}
 	}
@@ -134,7 +133,7 @@ footer {
 		display: inline-block;
 		width: 63%;
 		text-align: right;
-		img {
+		& > img {
 			position: absolute;
 			right: 0;
 			bottom: -30px;
@@ -147,25 +146,23 @@ footer {
 		height: 150px;
 		background-color: #303030;
 		.container {
-			display: flex;
-			align-items: center;
+			@include flex-center("vertical");
 			justify-content: space-between;
 			height: 100%;
 			.social-link {
 				width: 50%;
 				ul {
-					display: flex;
-					align-items: center;
+					@include flex-center("vertical");
 					justify-content: flex-end;
-					li:first-child {
-						color: $brandColor;
-						text-transform: uppercase;
-						font-weight: 700;
-						font-size: 20px;
-					}
-					li {
+					& > li {
 						margin: 0 2%;
 						cursor: pointer;
+						&:first-child {
+							color: $brandColor;
+							text-transform: uppercase;
+							font-weight: 700;
+							font-size: 20px;
+						}
 					}
 				}
 			}
